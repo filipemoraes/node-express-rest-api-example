@@ -15,6 +15,7 @@ app.listen(HTTP_PORT, () => {
 });
 
 app.get("/api/users", (req, res, next) => {
+    console.log("Executed /api/users");
     var sql = "select * from user"
     var params = []
     db.all(sql, params, (err, rows) => {
