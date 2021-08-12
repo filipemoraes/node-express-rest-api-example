@@ -31,7 +31,7 @@ app.get("/api/users", (req, res, next) => {
             "message":"success",
             "data":rows
         })
-      });*(
+      });*/
 });
 
 
