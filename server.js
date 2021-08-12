@@ -15,8 +15,12 @@ app.listen(HTTP_PORT, () => {
 });
 
 app.get("/api/users", (req, res, next) => {
-    console.log("Executed /api/users");
-    var sql = "select * from user"
+    console.log("Executed second /api/users");
+    res.json({
+            "message":"success",
+            "data": []
+        })
+    /**var sql = "select * from user"
     var params = []
     db.all(sql, params, (err, rows) => {
         if (err) {
@@ -27,7 +31,7 @@ app.get("/api/users", (req, res, next) => {
             "message":"success",
             "data":rows
         })
-      });
+      });*(
 });
 
 
